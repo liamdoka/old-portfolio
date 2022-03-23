@@ -1,0 +1,13 @@
+@import '../styles/config';
+
+.panel {
+    @include panel;
+
+    min-height: 250px;
+    min-width: 350px;
+    align-self: stretch;
+
+    background-image: url('../public/images/pfp.jpg');
+    background-size: cover;
+    background-position: center;
+}

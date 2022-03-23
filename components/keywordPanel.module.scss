@@ -1,0 +1,12 @@
+@import '../styles/config';
+
+.panel {
+    @include panel;
+
+    color: $background-color;
+}
+
+.chip {
+    background-color: $primary-color;
+    color: white;
+}

@@ -1,0 +1,49 @@
+@import '../styles/config';
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+
+    min-width: 350px;
+    width: 100%;
+    max-width: fit-content;
+    background-color: $background-text-color;
+
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatarDiv {
+    flex: 0 1 0;
+}
+
+.textDiv {
+    flex: 1 0 0;
+    min-height: 128px;
+
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .title {
+        margin: 0;
+        font-weight: bold;
+        
+        .name {
+            color: $primary-color;
+        }
+    }
+
+    .description {
+        font-style: italic;
+        font-weight: 500;
+        color: rgba(black, 0.7);
+    }
+}

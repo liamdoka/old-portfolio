@@ -1,0 +1,30 @@
+@import '../styles/config';
+
+.panel {
+    @include panel;
+    align-self: stretch;
+    color: $background-color;
+}
+
+.pages {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex-direction: column;
+}
+
+.listItem {
+    padding: 0.5rem 0;
+}

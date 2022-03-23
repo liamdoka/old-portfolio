@@ -1,0 +1,33 @@
+@import 'config';
+
+.container {
+	margin: 0;
+	padding: 0;
+	
+	height: 100vh;
+	width: 100%;
+}
+
+.panels {
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.child_one {
+	flex-basis: 50%;
+
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.child_two {
+	@extend .child_one
+}

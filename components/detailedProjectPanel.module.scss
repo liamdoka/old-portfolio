@@ -1,0 +1,67 @@
+@import '../styles/config';
+
+.panel {
+    @include panel;
+    align-self: stretch;
+    
+    color: $background-color;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.gallery_container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.image_container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+
+.gallery_text {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image_number {
+    padding: 1rem;
+    font-weight: bold;
+    color: $background-color;
+    vertical-align: middle;
+}
+
+.button_container {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chip {
+    background-color: $primary-color;
+    color: white;
+}
+
+
+.icon {
+    cursor: pointer;
+    
+    &:hover {
+        transition: 0.2s ease-out;
+        background-color: $background-color;
+    }
+}
