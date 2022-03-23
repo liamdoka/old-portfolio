@@ -16,7 +16,6 @@
         "date": "Feb 10, 2022",
         "desc": "Silly little multiplayer browser game",
         "images": [
-            "/images/pfp.jpg"
         ],
         "chips": ["VsCode","JavaScript","NodeJS","SocketIO","Express","MDL","SASS","CSS","HTML"],
         "text": "Played a game of this in-person only a day before my friend moved away for a year. \nI committed to learning WebSocket and finally making a game where we could all play and stick together. As it turns out, WebSocket is really confusing.\nBut I had a lot of fun and learnt a lot about SASS by making this.\nI don't think I can ever go back to plain CSS again... "
@@ -26,7 +25,7 @@
        "date": "Jan 15, 2022",
        "desc": "Linux Server Utilization Monitoring and Alert Generation System",
        "images": [
-           "/images/pfp.jpg"
+           
        ],        
        "chips": ["VsCode","Linux","VIM","Python","Pandas","HTML","Slack"],
        "text": "My first expedition into professional software development saw me creating a python application that would measure the server usages, and generate a report of said statistics.\nThat report would then be turned into a PDF and sent via email and Slack channel.\nThis Project showed me that almost everything in a professional software package needs to be configurable, in case they change their mind later... which they are quite prone to doing."
@@ -36,7 +35,7 @@
        "date": "Jun 10, 2021",
        "desc": "Login with Spotify to discover your favourite genres",
        "images": [
-           "/images/pfp.jpg"
+           
        ],
        "chips": ["Python","HTML","JavaScript","CSS","Flask","VsCode","SpotifyAPI"],
        "text": "This Project was my first ever use of a Python WebServer - Flask. Additionally it was mostly to get used to data manipulation with the help of the Official Spotify API. Definitely not as flashy on the visual end of things, but I'm proud of how it turned out otherwise"
@@ -46,7 +45,7 @@
        "date": "Mar 16, 2022",
        "desc": "Inception",
        "images": [
-           "/images/pfp.jpg"
+           
        ],
        "chips": ["VsCode","JavaScript","React","NextJS","SASS","HTML","CSS","MUI","Git"],
        "text": "With a tasteful blend of Next.js, Sass, and MUI, this site is the lovechild of everything I'm interested in at the moment. Additionally, these things are what I've been told by industry professionals is the most sought-after set of skills.\n"
@@ -56,7 +55,7 @@
        "date": "Oct 12, 2021",
        "desc": "WebScraper, Poet, Musician.",
        "images": [
-           "/images/pfp.jpg"
+           
        ],
        "chips": ["VsCode","Python","Selenium","HTML","Notion"],
        "text": "This python application uses Selenium and ChromeDriver to scrape facebook posts from notable page 'UniMelb Love Letters'. The application then splits the posts up into song lyrics using the Natural Language Toolkit - analyzing the syllables, rhymes, and semantic contents of the lines."
@@ -66,7 +65,7 @@
        "date": "Aug 8, 2021",
        "desc": "When you need a playlist ASAP",
        "images": [
-           "/images/pfp.jpg"
+           
        ],
        "chips": ["VsCode","Python","SpotifyAPI"],
        "text": "Every time I went to have a shower, I wanted a new experience.\nUsing an intial playlist as a pool, this generator gets the list of tracks in the pool and adds a random set to the Shower Playlist - equating to the specified time for the shower."
@@ -76,7 +75,7 @@
         "date": "Sep 10, 2021",
         "desc": "Review your subjects (honestly for once)",
         "images": [
-            "/images/pfp.jpg"
+            
         ],
         "chips": ["VsCode","NodeJS","Express","MongoDB","MDL","HTML","CSS","JavaScript","Git"],
         "text": ""

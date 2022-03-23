@@ -60,33 +60,35 @@ export default function DetailedProjectPanel({ project, index }) {
                 <div className={styles.waffle}>
                     {project.text}
                 </div>
-                <div className={styles.gallery_container}>
-                    <div className={styles.gallery_text}>Gallery</div>
-                    <div className={styles.gallery}>
 
-                        { project.images.map((url, id) => (
-                            <span key={id} className={styles.image_container} style={{ display: 'none' }} id={"img_" + id}>
-                                <Image src={url} alt={url} layout='fill' />
-                            </span>
-                        ))}
+                { project.images.length > 0 &&
+                    (<div className={styles.gallery_container}>
+                        <div className={styles.gallery_text}>Gallery</div>
+                        <div className={styles.gallery}>
 
+                            { project.images.map((url, id) => (
+                                <span key={id} className={styles.image_container} style={{ display: 'none' }} id={"img_" + id}>
+                                    <Image src={url} alt={url} layout='fill' />
+                                </span>
+                            ))}
+
+                        </div>
+
+                        <Stack direction="row" spacing={2} className={styles.button_container}>
+                            <Avatar className={styles.icon}>             
+                                <Button onClick={() => handleClick(-1)} sx={{ color: 'white' }}>
+                                    <ChevronLeftRoundedIcon fontSize='large' />
+                                </Button>
+                            </Avatar>
+                            <div className={styles.image_number}>{currentImage + 1} / {project.images.length}</div>
+                            <Avatar className={styles.icon}>
+                                <Button onClick={() => handleClick(1)} sx={{ color: 'white' }}>
+                                    <ChevronRightRoundedIcon fontSize='large' />
+                                </Button>
+                            </Avatar>
+                        </Stack>
                     </div>
-
-                    <Stack direction="row" spacing={2} className={styles.button_container}>
-                        <Avatar className={styles.icon}>             
-                            <Button onClick={() => handleClick(-1)} sx={{ color: 'white' }}>
-                                <ChevronLeftRoundedIcon fontSize='large' />
-                            </Button>
-                        </Avatar>
-                        <div className={styles.image_number}>{currentImage + 1} / {project.images.length}</div>
-                        <Avatar className={styles.icon}>
-                            <Button onClick={() => handleClick(1)} sx={{ color: 'white' }}>
-                                <ChevronRightRoundedIcon fontSize='large' />
-                            </Button>
-                        </Avatar>
-                    </Stack>
-
-                </div>
+                    )}
             </div>
         </div>
     )

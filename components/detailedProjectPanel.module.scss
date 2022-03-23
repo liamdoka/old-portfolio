@@ -2,11 +2,12 @@
 
 .panel {
     @include panel;
+
     align-self: stretch;
     
     color: $background-color;
     overflow-y: auto;
-    max-height: 100vh;
+    max-height: 100%;
 }
 
 .gallery_container {
@@ -53,7 +54,7 @@
 
 .chip {
     background-color: $primary-color !important;
-    color: white;
+    color: white !important;
 }
 
 
