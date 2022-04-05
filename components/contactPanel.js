@@ -29,41 +29,52 @@ export default function ContactPanel({ src }) {
                     <List>
                         <ListItem key={'email'}>
                             <ListItemAvatar>
-                                <Avatar className={styles.icon}>
-                                    <Email />
-                                </Avatar>
+                                <a href='mailto:ldokane01@gmail.com'>
+                                    <Avatar className={styles.icon}>
+                                        <Email />
+                                    </Avatar>
+                                </a>
                             </ListItemAvatar>
                             <ListItemText primary="ldokane01@gmail.com" />
                         </ListItem>
 
                         <ListItem key={'phone'}>
                             <ListItemAvatar>
-                                <Avatar className={styles.icon}>
+                                <Avatar className={`${styles.icon} ${styles.noselect}`} sx={{ cursor: 'default' }}>
                                     <Phone />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary="0469 789 182" />
+                            <ListItemText primary="+61 0469 789 182" />
                         </ListItem>
                     </List>
                 </div>
                 <div>
                     <span className={styles.text}>rambunctious</span>
                     <Stack direction="row" spacing={2} className={styles.additionalLinks}>
-                        <Avatar className={styles.icon}>
-                            <LinkedInIcon />
-                        </Avatar>
-                        <Avatar className={styles.icon}>
-                            <YouTubeIcon />
-                        </Avatar>
-                        <Avatar className={styles.icon}>
-                            <TwitterIcon />
-                        </Avatar>
-                        <Avatar className={styles.icon}>
-                            <InstagramIcon />
-                        </Avatar>
+                        <a target='_blank' href='https://www.linkedin.com/in/liam-o-kane-016500176/?originalSubdomain=au'>
+                            <Avatar className={styles.icon}>
+                                <LinkedInIcon />
+                            </Avatar>
+                        </a>
+                        <a target='_blank' href='https://www.youtube.com/channel/UCHSqVhWapwCvPZ0zb1OVBFQ'>
+                            <Avatar className={styles.icon}>
+                                <YouTubeIcon />
+                            </Avatar>
+                        </a>
+                        <a target='_blank' href='https://twitter.com/liamDoka'>
+                            <Avatar className={styles.icon}>
+                                <TwitterIcon />
+                            </Avatar>
+                        </a>
+                        <a target='_blank' href='https://github.com/liamdoka'>
+                            <Avatar className={styles.icon}>
+                                <span className="iconify" data-icon="mdi:github" data-width='32' data-height='32'></span>
+                            </Avatar>
+                        </a> 
                     </Stack>
                 </div>
             </div>
+            <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
         </div>
     )
 }

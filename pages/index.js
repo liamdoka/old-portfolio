@@ -29,7 +29,7 @@ export default function Home({ projects }) {
 			if (typeof window !== 'undefined') {
 				window.location.href = '#' + index
 			}
-		}, 10);
+		}, 50);
 	}
 
 	return (

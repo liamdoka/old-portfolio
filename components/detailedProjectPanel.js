@@ -8,10 +8,30 @@ import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import Button from '@mui/material/Button';
 
+const NaturalImage = (props) => {
+    const [ratio, setRatio] = useState(16/9) // default to 16:9
+  
+    return (
+      // eslint-disable-next-line jsx-a11y/alt-text
+      <Image
+        {...props}
+        // set the dimension (affected by layout)
+        width={600}
+        height={600 / ratio}
+        layout="intrinsic" // you can use "responsive", "fill" or the default "intrinsic"
+        loading='eager'
+        onLoadingComplete={({ naturalWidth, naturalHeight }) => 
+          setRatio(naturalWidth / naturalHeight)
+        }
+      />
+    )
+  }
+
+
 export default function DetailedProjectPanel({ project, index }) {
 
     const [currentImage, setCurrentImage] = useState(0);
-    
+
     const handleClick = (direction) => {
         if (currentImage + direction > project.images.length-1) {
             setCurrentImage(0)
@@ -47,7 +67,8 @@ export default function DetailedProjectPanel({ project, index }) {
                     <span>{project.name}</span>
                 </div>
                 <div className={styles.description}>
-                    {project.date}<br /><br />{project.desc}
+                    {project.date}{project.link && <>&nbsp;&nbsp;|&nbsp;&nbsp;<a target='_blank' rel='noreferrer' href={project.link} className={styles.git}>github repo</a></>}
+                    <br /><br />{project.desc}
                 </div>
 
                 <div className={styles.list}>
@@ -68,7 +89,8 @@ export default function DetailedProjectPanel({ project, index }) {
 
                             { project.images.map((url, id) => (
                                 <span key={id} className={styles.image_container} style={{ display: 'none' }} id={"img_" + id}>
-                                    <Image src={url} alt={url} layout='fill' />
+                                    {/* <Image src={url} alt={url} layout='fill'  /> */}
+                                    <NaturalImage alt={id} src={url} />
                                 </span>
                             ))}
 
@@ -93,3 +115,4 @@ export default function DetailedProjectPanel({ project, index }) {
         </div>
     )
 }
+

@@ -44,8 +44,8 @@ export default function ProjectPanel({ projectList, handleClick }) {
                         {projectList
                             .slice((page - 1) * itemsPerPage, page * itemsPerPage)
                             .map((project, id) => (
-                            <span key={id + ((page-1) * itemsPerPage)}><ListItemButton
-                            
+                            <span key={id + ((page-1) * itemsPerPage)}>
+                            <ListItemButton
                                 //selected={selectedPanel === id + ((page-1) * itemsPerPage)}
                                 className={styles.listItem} 
                                 onClick={(event) => handleClick(event, id + ((page-1) * itemsPerPage))} 

@@ -27,7 +27,7 @@
 .image_container {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: auto;
 }
 
 
@@ -65,4 +65,11 @@
         transition: 0.2s ease-out;
         background-color: $background-color;
     }
+}
+
+.git {
+    font-weight: bold;
+    text-decoration: underline !important;
+    color: $primary-color !important;
+
 }
