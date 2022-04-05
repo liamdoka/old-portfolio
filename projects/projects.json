@@ -5,6 +5,7 @@
       "images": [
 
       ],
+      "link": "https://github.com/liamdoka/portfolio",
       "chips": ["VsCode","JavaScript","React","NextJS","SASS","HTML","CSS","MUI","Git"],
       "text": "With a tasteful blend of Next.js, Sass, and MUI, this site is the lovechild of everything I'm interested in at the moment. Additionally, these things are what I've been told by industry professionals is the most sought-after set of skills.\n"
    },
