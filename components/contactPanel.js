@@ -8,7 +8,7 @@ import Phone from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import {Icon} from '@iconify/react'
 import styles from './contactPanel.module.scss'
 import Stack from '@mui/material/Stack';
 
@@ -51,30 +51,29 @@ export default function ContactPanel({ src }) {
                 <div>
                     <span className={styles.text}>rambunctious</span>
                     <Stack direction="row" spacing={2} className={styles.additionalLinks}>
-                        <a target='_blank' href='https://www.linkedin.com/in/liam-o-kane-016500176/?originalSubdomain=au'>
+                        <a target='_blank' href='https://www.linkedin.com/in/liam-o-kane-016500176/?originalSubdomain=au' rel="noreferrer">
                             <Avatar className={styles.icon}>
                                 <LinkedInIcon />
                             </Avatar>
                         </a>
-                        <a target='_blank' href='https://www.youtube.com/channel/UCHSqVhWapwCvPZ0zb1OVBFQ'>
+                        <a target='_blank' href='https://www.youtube.com/channel/UCHSqVhWapwCvPZ0zb1OVBFQ' rel="noreferrer">
                             <Avatar className={styles.icon}>
                                 <YouTubeIcon />
                             </Avatar>
                         </a>
-                        <a target='_blank' href='https://twitter.com/liamDoka'>
+                        <a target='_blank' href='https://twitter.com/liamDoka' rel="noreferrer">
                             <Avatar className={styles.icon}>
                                 <TwitterIcon />
                             </Avatar>
                         </a>
-                        <a target='_blank' href='https://github.com/liamdoka'>
+                        <a target='_blank' href='https://github.com/liamdoka' rel="noreferrer">
                             <Avatar className={styles.icon}>
-                                <span className="iconify" data-icon="mdi:github" data-width='32' data-height='32'></span>
+                                <Icon icon='mdi:github' width='32' height='32' />
                             </Avatar>
                         </a> 
                     </Stack>
                 </div>
             </div>
-            <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
         </div>
     )
 }
