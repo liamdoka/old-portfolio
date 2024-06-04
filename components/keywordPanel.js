@@ -1,9 +1,10 @@
 import styles from './keywordPanel.module.scss'
 import Chip from '@mui/material/Chip'
 
-const keywords = ['Python','JavaScript','NodeJS','SASS','CSS','HTML','Pandas','Spotify','Discord','NextJS','C++','Java','VIM','VsCode','React','PHP','SQL','Git','Express','SocketIO','MongoDB','Slack','Notion','Windows','Linux','MDL','MUI','Flask','Selenium'].sort(() => Math.random() - 0.5);
-
 export default function KeywordPanel() {
+
+    const keywords = ['Python','JavaScript','NodeJS','SASS','CSS','HTML','Pandas','Spotify','Discord','NextJS','C++','Java','VIM','VsCode','React','PHP','SQL','Git','Express','SocketIO','MongoDB','Slack','Notion','Windows','Linux','MDL','MUI','Flask','Selenium'].sort(() => Math.random() - 0.5);
+
 
     return (
         <div className={styles.panel}>
